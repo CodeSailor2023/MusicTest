@@ -11,7 +11,7 @@
  Target Server Version : 50724 (5.7.24)
  File Encoding         : 65001
 
- Date: 19/08/2024 16:35:50
+ Date: 20/08/2024 08:10:28
 */
 
 SET NAMES utf8mb4;
@@ -149,8 +149,8 @@ INSERT INTO `links` VALUES (1087, '竞速练习', 11, '\\/game\\/2020-4-28\\/158
 DROP TABLE IF EXISTS `music_rhythm`;
 CREATE TABLE `music_rhythm`  (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `musicId` int(11) NULL DEFAULT NULL,
-  `rhythmId` int(11) NULL DEFAULT NULL,
+  `music_id` int(11) NULL DEFAULT NULL,
+  `rhythm_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 66 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -227,8 +227,8 @@ INSERT INTO `music_rhythm` VALUES (63, 66, 77);
 DROP TABLE IF EXISTS `music_rhythmgame`;
 CREATE TABLE `music_rhythmgame`  (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `musicId` int(11) NULL DEFAULT NULL,
-  `rhythmGameId` int(11) NULL DEFAULT NULL,
+  `music_id` int(11) NULL DEFAULT NULL,
+  `rhythm_game_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 

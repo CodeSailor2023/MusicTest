@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("lessons")
+@TableName("videos")
 public class Video {
     private Integer id;
     private String videoUrl;
+    @TableField(value = "`order`")
     private Integer order;
     private String name;
     private String comment;

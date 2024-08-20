@@ -15,6 +15,6 @@ public class RhythmDto {
     private Integer speed;
     private String name;
     private Integer order;
-    private Object[] site;
+    private Object[] sites;
     private Object musics_url;
 }

@@ -17,6 +17,7 @@ public class Rhythm {
     private String twoConcertScoreUrl;
     private Integer speed;
     private String name;
+    @TableField(value = "`order`")
     private Integer order;
     private Integer site; //sites的逻辑外键
 }

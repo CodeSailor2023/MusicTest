@@ -14,5 +14,6 @@ public class RhythmGame {
     private Integer id;
     private String music_score_url;
     private Integer speed;
+    @TableField(value = "`order`")
     private Integer order;
 }
